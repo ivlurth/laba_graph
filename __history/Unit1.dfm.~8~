@@ -1,0 +1,174 @@
+object Form1: TForm1
+  Left = 243
+  Top = 198
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = #1043#1088#1072#1092#1099
+  ClientHeight = 612
+  ClientWidth = 1026
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbl1: TLabel
+    Left = 8
+    Top = 24
+    Width = 111
+    Height = 18
+    Caption = #1063#1080#1089#1083#1086' '#1101#1083#1077#1084#1077#1085#1090#1086#1074
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Book Antiqua'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbl2: TLabel
+    Left = 16
+    Top = 336
+    Width = 48
+    Height = 13
+    Caption = #1042#1089#1077' '#1087#1091#1090#1080':'
+  end
+  object lbl4: TLabel
+    Left = 184
+    Top = 24
+    Width = 14
+    Height = 18
+    Caption = #1086#1090
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Book Antiqua'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbl5: TLabel
+    Left = 272
+    Top = 24
+    Width = 15
+    Height = 18
+    Caption = #1076#1086
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Book Antiqua'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object imgGraph: TImage
+    Left = 488
+    Top = 8
+    Width = 505
+    Height = 441
+  end
+  object lblLong: TLabel
+    Left = 488
+    Top = 472
+    Width = 181
+    Height = 21
+    Caption = #1057#1072#1084#1099#1081' '#1076#1083#1080#1085#1085#1099#1081' '#1087#1091#1090#1100':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Book Antiqua'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblShort: TLabel
+    Left = 488
+    Top = 504
+    Width = 149
+    Height = 21
+    Caption = #1050#1088#1072#1090#1095#1072#1081#1096#1080#1081' '#1087#1091#1090#1100':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Book Antiqua'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblCenter: TLabel
+    Left = 488
+    Top = 536
+    Width = 123
+    Height = 21
+    Caption = #1062#1077#1085#1090#1088' '#1086#1088#1075#1088#1072#1092#1072':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Book Antiqua'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnSort: TButton
+    Left = 160
+    Top = 296
+    Width = 75
+    Height = 25
+    Caption = #1057#1090#1072#1088#1090
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Book Antiqua'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnSortClick
+  end
+  object mmoWays: TMemo
+    Left = 16
+    Top = 352
+    Width = 457
+    Height = 233
+    Lines.Strings = (
+      'mmoWays')
+    TabOrder = 4
+  end
+  object nudFist: TSpinEdit
+    Left = 143
+    Top = 56
+    Width = 121
+    Height = 22
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 1
+    Value = 0
+  end
+  object nudLast: TSpinEdit
+    Left = 270
+    Top = 56
+    Width = 121
+    Height = 22
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 2
+    Value = 0
+  end
+  object stg1: TStringGrid
+    Left = 16
+    Top = 120
+    Width = 385
+    Height = 170
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 5
+  end
+  object nudCount: TEdit
+    Left = 16
+    Top = 56
+    Width = 121
+    Height = 21
+    TabOrder = 0
+    Text = '5'
+    OnChange = nudCountChange
+  end
+end
